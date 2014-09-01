@@ -1,79 +1,773 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Aq-projeto-ello : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Aq-projeto-ello</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/felipegenuino/AQ-projeto-ello">View on GitHub</a>
-
-          <h1 id="project_title">Aq-projeto-ello</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/felipegenuino/AQ-projeto-ello/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/felipegenuino/AQ-projeto-ello/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Aq-projeto-ello maintained by <a href="https://github.com/felipegenuino">felipegenuino</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>QiEllo - Integrando o processo construtivo</title>
+<link rel="stylesheet" href="stylesheet/reset.css" />
+<link rel="stylesheet" href="stylesheet/960.css" />
+<link rel="stylesheet" href="stylesheet/style.css" />
+<link rel="stylesheet" href="stylesheet/animate.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="stylesheet/ie7.css" /> <![endif]-->
+<!--[if IE 8]> <link rel="stylesheet" type="text/css" href="stylesheet/ie8.css" /> <![endif]-->
+<!--[if IE 9]> <link rel="stylesheet" type="text/css" href="stylesheet/ie9.css" /> <![endif]-->
+<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+ <!-- Favicon e touch icons -->
+    <link rel="shortcut icon" href="imagens/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagens/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagens/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagens/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon" href="imagens/ico/apple-touch-icon-57-precomposed.png">
     
+    
+    
+<!-- include jQuery library --- --> <script type="text/javascript" src="javascript/jquery.min.js"></script>
+<!-- include Cycle plugin ----- --> <script type="text/javascript" src="javascript/jquery.cycle.all.latest.js"></script>
+<!-- include easing plugin ---- --> <script type="text/javascript" src="javascript/jquery.easing.1.3.js"></script>
+<!-- include clearfield plugin- --> <script type="text/javascript" src="javascript/jquery.clearfield.js"></script>
+<!-- include carousel --------- --> <script type="text/javascript" src="javascript/jquery.tinycarousel.min.js"></script>
 
-  </body>
+
+<script type="text/javascript" src="javascript/main.js" ></script>
+
+</head>
+
+
+<body >
+ 
+ <div id="container">
+ 
+<div id="region-header"> 
+                <div id="bloco-logotipo-topo">
+        		<a class="logo-qiello" href="#"> QiEllo - Integrando o processo construtivo</a>
+        		<a class="logo-telefone" > Telefone de atendimento (48)3027-9000</a>
+        		</div> <!-- //bloco-logotipo-topo -->
+            
+        <div id="bloco-nav-top">
+                <ul class="bloco-menu-topo">
+                    <li> <a href="sobre.html">	Sobre a Ello	</a> </li>
+                    <li> <a href="servicos.html">	Serviços 		</a> </li>
+                    <li> <a href="clientes.html"> 	Clientes 		</a> </li>
+                    <li> <a href="http://www.altoqi.com.br"> 	AltoQi 			</a> </li>
+                    <li> <a href="contato.html"> 	Contato			</a> </li>
+                    </ul>
+                
+                <ul class="bloco-menu-social">
+                    <li> <a href="#" class="icon-facebook">	Facebook	</a> </li>
+                    <li> <a href="#" class="icon-twitter" >	Twitter 	</a> </li>
+                    <li> <a href="#" class="icon-youtube" > Youtube 	</a> </li>
+                    </ul> 
+                
+                <div class="bloco-banner">
+                	<a href="#" title="Titulo do banner"> 
+                    	<img src="imagens/base-portal/banner-topo.png" />
+                      		</a>
+                  				</div> <!--// bloco-banner-top -->
+                                
+                 <div class="bloco-search">
+                	<form method="post" action="#">
+                        <input class="clearField"  name="search" value="BUSCA DIRETA: Nome, categoria, etc.">  
+                        <input  type="submit" value="Pesquisar">
+					</form>
+                            
+            
+                        
+
+
+                  				</div> <!--// bloco-search -->               
+                                
+                 </div> <!-- //regiao-nav-top -->   
+ 
+ </div> <!-- //header -->    
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   
+ 					<div id="region-sidebar"> 
+					 
+<!-- inicia widget-softwares --> 
+        <div id="widget" class="widget-menulateral">	
+	    	<ul>
+      		<li class="menu-eletrico">	 <a href="#"> Elétrico	</a></li>
+            <li class="menu-hidraulico">	 <a href="#"> Hidraulico	</a></li>
+      		<li class="menu-estrutural">	 <a href="#"> Estrutural	</a></li>
+            <li class="menu-alvenaria"> 	 <a href="#"> Alvenaria	</a></li>
+            
+<!-- inicio painel-eletrico --> <div class="painel-eletrico animated fadeInLeft">
+                                    <div class="painel-conteudo">
+                                    <span class="fechar-menu">Fechar menu <em> X</em> </span>
+                                         <h6> Catálogo de peças e insumos </h6>
+                                         <h3>Elétricos </h3>
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                        
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                         
+                                     </div><!-- //painel-conteudo -->
+                                     <div class="painel-banner">
+                                     <img src="imagens/base-portal/banner-lateral-menu-eletricos.jpg" />
+                                     </div><!-- //painel-banner -->
+                                </div><!-- //painel eletrico -->
+
+
+
+<!-- inicio painel-hidraulico --> <div class="painel-hidraulico animated fadeInLeft">
+                                    <div class="painel-conteudo">
+                                    <span class="fechar-menu">Fechar menu <em> X</em>  </span>
+                                         <h6> Catálogo de peças e insumos </h6>
+                                         <h3>Hidráulico </h3>
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                        
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                         
+                                     </div><!-- //painel-conteudo -->
+                                     <div class="painel-banner">
+                                     <img src="imagens/base-portal/banner-lateral-menu-hidraulicos.jpg" />
+                                     </div><!-- //painel-banner -->
+                                </div><!-- //painel Hidraulico -->
+                                
+<!-- inicio painel-estrutural --> <div class="painel-estrutural animated fadeInLeft">
+                                    <div class="painel-conteudo">
+                                    <span class="fechar-menu">Fechar menu <em> X</em>  </span>
+                                         <h6> Catálogo de peças e insumos </h6>
+                                         <h3>Estrutural</h3>
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                        
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                         
+                                     </div><!-- //painel-conteudo -->
+                                     <div class="painel-banner">
+                                     <img src="imagens/base-portal/banner-lateral-menu-estrutural.jpg" />
+                                     </div><!-- //painel-banner -->
+                                </div><!-- //painel-estrutural -->  
+                                
+                                                   
+<!-- inicio painel-alvenaria --> <div class="painel-alvenaria animated fadeInLeft">
+                                    <div class="painel-conteudo">
+                                    <span class="fechar-menu">Fechar menu <em> X</em>  </span>
+                                         <h6> Catálogo de peças e insumos </h6>
+                                         <h3>Alvenaria </h3>
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                        
+                                        <ul>                                    
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Bronze">						Bronze						</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbon">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        <li><a href="#" titulo="Caixas de passagem">			Caixas de passagem			</a></li>
+                                        <li><a href="#" titulo="Calha metálica">				Calha metálica				</a></li>
+                                        <li><a href="#" titulo="Aço carbono">					Aço carbono					</a></li>
+                                        <li><a href="#" titulo="Aparelho">						Aparelho					</a></li>
+                                        <li><a href="#" titulo="Aquecedor de passagem à gas">	Aquecedor de passagem à gas	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica incêndio">		Bomba hidráulica incêndio	</a></li>
+                                        <li><a href="#" titulo="Bomba hidráulica recalque">		Bomba hidráulica recalque	</a></li>
+                                        </ul>
+                                         
+                                     </div><!-- //painel-conteudo -->
+                                     <div class="painel-banner">
+                                     <img src="imagens/base-portal/banner-lateral-menu-alvenaria.jpg" />
+                                     </div><!-- //painel-banner -->
+                                </div><!-- //painel-alvenaria -->                     
+    		</ul>
+ 
+ 
+                       
+                           
+                           
+<!-- inicia a widget busca personalizada -->
+   <div id="widget" class="widget-busca-personalizada">
+    			<form method="post" action="#">
+
+                                                     
+                                <select name="select-fabricante">
+                                	<option value="fabricante1">Fabricante 1</option>
+                                		<option value="fabricante2">Fabricante 2</option>
+                                			<option value="fabricante3">Fabricante 3</option>
+                                				<option value="fabricante4">Fabricante 4</option>
+                                					</select>
+                                                    
+                                  <select name="select-classe">
+                                	<option value="classe1">Classe 1</option>
+                                		<option value="classe2">Classe 2</option>
+                                			<option value="classe3">Classe 3</option>
+                                				<option value="classe4">Classe 4</option>
+                                					</select>
+                                                    
+                                  <select name="select-grupo">
+                                	<option value="grupo1">Grupo 4</option>
+                                		<option value="grupo2">Grupo 4</option>
+                                			<option value="grupo3">Grupo 4</option>
+                                				<option value="grupo4">Grupo 4</option>
+                                					</select>   
+                                                    
+                                   <select name="select-utilizacao">
+                                	<option value="utilizacao1">Utilização 1</option>
+                                		<option value="utilizacao2">Utilização 2</option>
+                                			<option value="utilizacao3">Utilização 3</option>
+                                				<option value="utilizacao4">Utilização 4</option>
+                                					</select>                                                     
+                                                    
+                                  <select name="select-peca">
+                                	<option value="peca1">Peça 1</option>
+                                		<option value="peca2">Peça 2</option>
+                                			<option value="peca3">Peça 3</option>
+                                				<option value="peca4">Peça 4</option>
+                                					</select>  
+ 
+                                 <select name="select-insumo">
+                                	<option value="insumo1">Insumo1</option>
+                                		<option value="insumo2">Insumo 2</option>
+                                			<option value="insumo3">Insumo 3</option>
+                                				<option value="insumo4">Insumo 4</option>
+                                					</select>  
+													
+                        <input  type="submit" value="Pesquisar">
+					</form>
+                           
+ </div> <!--// #widget  .busca personalizada  -->   
+ 
+ 
+       </div> <!-- #widget .widget-software --> 
+	   
+	   
+	   
+        
+ 					</div> <!-- //region-sidebar-->  
+
+					<div id="region-conteudo"> 
+				 
+                       
+                       
+<!-- inicia o bloco slideshow --> <div id="bloco-slideshow"> 
+                                        <div class="slideshow"> 
+                                            <img src="imagens/base-portal/slideshow-circle-1.jpg"  /> 
+                                            <img src="imagens/base-portal/slideshow-circle-2.jpg" /> 
+                                            <img src="imagens/base-portal/slideshow-circle-3.jpg"  /> 
+                                            <img src="imagens/base-portal/slideshow-circle-4.jpg"  /> 
+                                            </div> <!-- //.slideshow -->
+                                        </div><!-- // #bloco-slideshow   -->
+                        
+<!-- inicia o bloco acesso restrito -->  <div id="bloco-acesso-restrito"> 
+                                        <div class="acesso-restrito"> 
+                                        <h2> Área de Acesso </h2>
+                                            <form class="area-de-acesso" name="area-de-acesso" method="post" action="xxx">
+                                                <input type="text" id="usuario" class="clearField" value="login:" />
+                                                <input type="password" id="senha" class="clearField" value="senha:" />
+                                                <div class="lembrar">
+                                                    <label><strong> <input type="checkbox" name="radiobutton" value="lembrar"></strong> 
+                                                            <span>sempre lembrar</span> </label>
+                                                    <label><strong> &#187 </strong>	
+                                                            <span> <a href="#" class="left"> esqueci a senha</span></a></label>
+                                                            </div><!-- //.lembrar -->
+                                                <button type="submit">entrar</button>
+                                                <h3> <a href="#" title=""> Novo cadastro</a> </h3>
+                                            </form> 
+                                        </div> <!-- //.acesso-restrito -->
+                                        </div><!-- //#bloco-acesso-restrito   -->
+    
+                                    
+                                        
+<!-- inicia o bloco-destaques -->  <div id="bloco-destaques"> 
+										<ul class="destaques">
+                                        	<li> 
+                                            	<a href="#" title="Titulo"> <img src="imagens/base-portal/destaque-1.jpg" alt="Imagem:Sobre a figura" /> </a>
+                                                <h3> Nome do produto </h3>
+                                                <p> A linha TIGREGÁS foi desenvolvida 
+                                                    com a função de conduzir gás em 
+                                                    de gás combustível para pressões 
+                                                    de no máximo 4 e 7 BAR para as 
+                                                    resinas PE 80 e PE 100, 
+                                                    respectivamente. </p>
+                                                 <a class="veja-mais" href="#" > Veja Mais</a>
+                                            	</li>
+                                           
+                                           	<li>
+                                            	<a href="#" title="Titulo"><img src="imagens/base-portal/destaque-2.jpg" alt="Imagem:Sobre a figura" /></a>
+                                                <h3> Nome do produto </h3>
+                                                <p> A linha TIGREGÁS foi desenvolvida 
+                                                    com a função de conduzir gás em 
+                                                    de gás combustível para pressões 
+                                                    de no máximo 4 e 7 BAR para as 
+                                                    resinas PE 80 e PE 100, 
+                                                    respectivamente. </p>
+                                                 <a class="veja-mais" href="#" > Veja Mais</a>
+                                            	</li>   
+                                           	
+                                            <li class="last">
+                                            	<a href="#" title="Titulo"><img src="imagens/base-portal/destaque-3.jpg" alt="Imagem:Sobre a figura" /></a>
+                                                <h3> Nome do produto </h3>
+                                                <p> A linha TIGREGÁS foi desenvolvida 
+                                                    com a função de conduzir gás em 
+                                                    de gás combustível para pressões 
+                                                    de no máximo 4 e 7 BAR para as 
+                                                    resinas PE 80 e PE 100, 
+                                                    respectivamente. </p>
+                                                 <a class="veja-mais" href="#" > Veja Mais</a>
+                                            	</li>  
+                                                                       
+                                    	</ul><!-- //destaques -->
+									</div>  <!-- //bloco-destaques -->             
+					 
+                     <hr class="clear"/>
+					</div> <!-- //region-conteudo-->  
+  
+ 		
+
+		
+ 
+<!-- ------------------------------------------------
+ 'INICIO DO BANNER CENTRAL 
+ ---------------------------------------------------- --> 	
+    <div id="region-banner-full"> 
+              <a href="#" title="Titulo do banner"> 
+                    <img src="imagens/base-portal/full-banner.jpg" />
+                </a>
+     </div> <!-- //region-banner-full -->   
+ <!-- ------------------------------------------------
+ 'FIM DO BANNER CENTRAL 
+ ---------------------------------------------------- --> 
+
+
+
+
+
+ <!-- ------------------------------------------------
+ 'INICIO DO SIDEBAR 
+ ---------------------------------------------------- --> 	
+  <div id="region-sidebar"> 
+     
+   <div  class="widget-softwares">
+      <h4> Softwares </h4>
+   
+
+   <div id="slider-software">
+		
+ <a class="buttons prev" href="#"> < </a> 
+						
+		 
+		<div class="viewport">
+		
+				
+				
+		 
+			<ul class="overview">
+                <li class="hydros">
+                    <span><img src="imagens/base-portal/widget-caixas-hydros.png" /></span> 
+                  <h5> <a href="#" title="Hydros V4">Hydros V4 </a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>
+                     
+                <li class="lumine">
+                	<span> <img src="imagens/base-portal/widget-caixas-lumine.png" /></span> 
+                	<h5><a href="#" title="Lumine V4"> Lumine V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>    
+                    
+                <li class="qicad"> 
+               		<span><img src="imagens/base-portal/widget-caixas-qicad.png" /></span>
+                	<h5> <a href="#" title="QiCAD V4"> QiCAD V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+               		</li> 
+               		
+				<li class="eberick-v7"> 
+                	<span> <img src="imagens/base-portal/widget-caixas-hydros.png" /></span>
+                	<h5> <a href="#" title="Eberick V7"> Eberick V7</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>    
+	   <li class="hydros">
+                    <span><img src="imagens/base-portal/widget-caixas-hydros.png" /></span> 
+                  <h5> <a href="#" title="Hydros V4">Hydros V4 </a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>
+                     
+                <li class="lumine">
+                	<span> <img src="imagens/base-portal/widget-caixas-lumine.png" /></span> 
+                	<h5><a href="#" title="Lumine V4"> Lumine V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>    
+                    
+                <li class="qicad"> 
+               		<span><img src="imagens/base-portal/widget-caixas-qicad.png" /></span>
+                	<h5> <a href="#" title="QiCAD V4"> QiCAD V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+               		</li> 
+               		
+				<li class="eberick-v7"> 
+                	<span> <img src="imagens/base-portal/widget-caixas-hydros.png" /></span>
+                	<h5> <a href="#" title="Eberick V7"> Eberick V7</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>  
+                    
+                    
+                    <li class="hydros">
+                    <span><img src="imagens/base-portal/widget-caixas-hydros.png" /></span> 
+                  <h5> <a href="#" title="Hydros V4">Hydros V4 </a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>
+                     
+                <li class="lumine">
+                	<span> <img src="imagens/base-portal/widget-caixas-lumine.png" /></span> 
+                	<h5><a href="#" title="Lumine V4"> Lumine V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>    
+                    
+                <li class="qicad"> 
+               		<span><img src="imagens/base-portal/widget-caixas-qicad.png" /></span>
+                	<h5> <a href="#" title="QiCAD V4"> QiCAD V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+               		</li> 
+               		
+				<li class="eberick-v7"> 
+                	<span> <img src="imagens/base-portal/widget-caixas-hydros.png" /></span>
+                	<h5> <a href="#" title="Eberick V7"> Eberick V7</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>    
+	   <li class="hydros">
+                    <span><img src="imagens/base-portal/widget-caixas-hydros.png" /></span> 
+                  <h5> <a href="#" title="Hydros V4">Hydros V4 </a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>
+                     
+                <li class="lumine">
+                	<span> <img src="imagens/base-portal/widget-caixas-lumine.png" /></span> 
+                	<h5><a href="#" title="Lumine V4"> Lumine V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>    
+                    
+                <li class="qicad"> 
+               		<span><img src="imagens/base-portal/widget-caixas-qicad.png" /></span>
+                	<h5> <a href="#" title="QiCAD V4"> QiCAD V4</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+               		</li> 
+               		
+				<li class="eberick-v7"> 
+                	<span> <img src="imagens/base-portal/widget-caixas-hydros.png" /></span>
+                	<h5> <a href="#" title="Eberick V7"> Eberick V7</a></h5>
+                    <p> Projeto de infra-estrutura  para instalações  prediais de cabeamento  estruturado e telefonia fixa.</p>
+                    </li>  
+                     
+				
+				 
+			</ul>
+		</div>
+		
+				 <a class="buttons next" href="#"> > </a>
+
+			</div><!-- //slider-software -->
+
+	</div><!-- //widget-software -->
+        
+   </div> <!-- //region-sidebar-->  
+<!-- ------------------------------------------------
+ 'FIM DO SIDEBAR
+ ---------------------------------------------------- -->
+ 
+ 
+ <!-- ------------------------------------------------
+ 'CONTEUDO INFERIOR
+ ---------------------------------------------------- -->
+ 
+					<div id="region-conteudo"> 
+				 
+    
+<!-- inicia o bloco-marcas -->  <div id="bloco-marcas" > 
+										<ul class="lista-marcas-1">
+                                        	<li> <a href="#" title="tramontina" ><img src="imagens/base-portal/logotipo-marcas-tramontina.png"  alt="imagem: logotipo tramontina"/></a> </li>
+                                            <li> <a href="#" title="Incepa" > <img src="imagens/base-portal/logotipo-marcas-incepa.png"  alt="imagem: logotipo Incepa"/></a> </li>
+                                            <li> <a href="#" title="3M" > <img src="imagens/base-portal/logotipo-marcas-3m.png"  alt="imagem: logotipo 3m"/></a> </li>
+                                            <li> <a href="#" title="Fame" > <img src="imagens/base-portal/logotipo-marcas-fame.png"  alt="imagem: logotipo Fame"/> </a> </li>
+                                        </ul>
+                                           	
+                                     	<ul class="lista-marcas-2">
+                                        	 <li> <a href="#" title="Fame" > <img src="imagens/base-portal/logotipo-marcas-fame.png"  alt="imagem: logotipo Fame"/> </a> </li>
+                                        	<li> <a href="#" title="Deca" >  <img src="imagens/base-portal/logotipo-marcas-deca.png"  alt="imagem: logotipo Deca"/> </a> </li>
+                                            <li> <a href="#" title="Tigre" > <img src="imagens/base-portal/logotipo-marcas-tigre.png"  alt="imagem: logotipo Tigre"/>  </a> </li>
+                                            <li> <a href="#" title="Fame" > <img src="imagens/base-portal/logotipo-marcas-fame.png"  alt="imagem: logotipo Fame"/> </a> </li>
+                                        	<li class="last"> <a href="#" title="Deca" >  <img src="imagens/base-portal/logotipo-marcas-deca.png"  alt="imagem: logotipo Deca"/> </a> </li>
+                                        </ul>
+                                        
+                                       <ul class="lista-marcas-3">
+                                        	 <li> <a href="#" title="Fame" > <img src="imagens/base-portal/logotipo-marcas-fame.png"  alt="imagem: logotipo Fame"/> </a> </li>
+                                        	<li> <a href="#" title="Incepa" > <img src="imagens/base-portal/logotipo-marcas-incepa.png"  alt="imagem: logotipo Incepa"/></a> </li>
+                                            <li> <a href="#" title="Tigre" > <img src="imagens/base-portal/logotipo-marcas-tigre.png"  alt="imagem: logotipo Tigre"/>  </a> </li>
+                                            <li> <a href="#" title="Fame" > <img src="imagens/base-portal/logotipo-marcas-fame.png"  alt="imagem: logotipo Fame"/> </a> </li>
+                                        </ul>
+                                        
+                                        <a href="#" class="insira-sua-marca" title="Insira sua marca aqui"> Insira sua marca aqui </a>
+                                      
+									</div>  <!-- //bloco-marcas -->             
+					 
+                     
+                     
+                     
+                     
+<!-- inicia o bloco-banner --> <div class="bloco-banner">
+                				<a href="#" title="Titulo do banner"> 
+                    				<img src="imagens/base-portal/banner-topo.png">
+                      					</a>
+                  							</div> <!-- //bloco-banner--> 
+                                
+                                
+                                
+                                
+ 					</div> <!-- //region-conteudo-->  
+  
+ 
+
+<!-- ------------------------------------------------
+ 'INICIO DO FOOTER 
+ ---------------------------------------------------- -->  
+
+<div id="region-footer"> 
+ 
+      <div class="footer">        
+        <div class="primeira-coluna" >
+       		 <a class="logo-qiello-footer" href="#"> QiEllo - Integrando o processo construtivo</a>
+             <div class="endereco"> 
+            	<span> S3ENG - Tecnologia Aplicada à Engenharia S/A.	</span>
+           	 	<span> Rodovia SC 401, 600 | Ed. Alfama,			 	</span>
+            	<span> 4° andar | Tecnópolis | 							</span>
+            	<span> Bairro João Paulo | CEP 88030-911				</span>
+            	<span> Florianópolis | Santa Catarina | Brasil			</span>
+             	</div> <!-- //endereco -->  
+            	<a class="logo-telefone-footer" > Telefone de atendimento (48)3027-9000</a>
+        		</div> <!-- //primeira-coluna -->  
+                
+        <div class="segunda-coluna">
+			<ul class="lista-telefones">
+            	<li> 
+                	<strong> Central de Atendimento </strong> 
+					<span>(48) 3027-9000			</span>
+					<span> fax: (48) 3027-9030	</span>
+            		</li>
+                
+                <li> 
+                    <strong> Comercial </strong> 
+                    <span>(48) 3027-9010			</span>
+                    <span> fax: (48) 3027-9030	</span>
+                    </li>
+            
+                <li> 
+                    <strong> Cursos e Palestras </strong> 
+                    <span>(48) 3332-5000			</span>
+                    <span> fax: (48) 3332-5010	</span>
+                    </li>
+              </ul> 
+            </div> <!-- //segunda-coluna -->  
+  
+         <div class="terceira-coluna">
+            <ul class="lista-telefones">
+            	<li> 
+                	<strong> Central de Atendimento </strong> 
+					<span>(48) 3027-9000			</span>
+					<span> fax: (48) 3027-9030	</span>
+            		</li>
+                
+                <li> 
+                	<strong> Comercial </strong> 
+					<span>(48) 3027-9010			</span>
+					<span> fax: (48) 3027-9030	</span>
+            		</li>
+                
+                <li> 
+                	<strong> Cursos e Palestras </strong> 
+					<span>(48) 3332-5000			</span>
+					<span> fax: (48) 3332-5010	</span>
+            		</li>
+              </ul> 
+           </div> <!-- //terceira-colun -->  
+                
+        <div class="quarta-coluna" >
+			<span> Menu institucional</span>
+            <span> ou map location</span>
+        		</div> <!-- //quarta-coluna -->   
+                
+           
+      </div><!--//footer -->     
+ </div> <!-- //region-footer -->         
+
+<!-- ------------------------------------------------
+ 'FIM DO FOOTER 
+ ---------------------------------------------------- -->  
+<hr class="clear"/>
+</div> <!-- //container -->
+</body>
 </html>
